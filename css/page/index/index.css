@@ -1,0 +1,445 @@
+@import url("../../lib/bootstrap.css");
+@import url("xxs.css");
+@import url("xs.css");
+@import url("sm.css");
+@import url("md.css");
+@import url("lg.css");
+@import url("xlg.css");
+@import url("xxlg.css");
+/******* navbar*******/
+#top-nav {
+    height: 65px;
+    background: black;
+    display: flex;
+    position: relative;
+}
+#top-nav>#top-nav-brand {
+    height: inherit;
+    width: auto;
+    margin-left: 20px;
+}
+#top-nav>#top-nav-brand a {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#top-nav>#top-nav-brand i {
+    font-size: 55px;
+    margin-right: 10px;
+}
+#top-nav>#top-nav-brand h1 {
+    margin: unset;
+}
+#top-nav>#top-nav-brand h1,#top-nav>#top-nav-brand i{
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#top-nav>#top-nav-brand a:hover h1 , #top-nav>#top-nav-brand a:hover i{
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#top-nav>ul#top-nav-menu-items {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+#top-nav>ul#top-nav-menu-items>li {
+    margin-right: 24px;
+}
+#top-nav>ul#top-nav-menu-items>li:last-child {
+    margin-right: unset;
+}
+#top-nav>ul#top-nav-menu-items>li>a {
+    color: white;
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 13px 34px;
+}
+#top-nav>ul#top-nav-menu-items>li>a>i {
+    font-size: 35px;
+    transition: all 420ms linear;
+}
+#top-nav>ul#top-nav-menu-items>li>a:hover i {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#top-nav-services-menu  {
+    display: flex;
+}
+#top-nav-services-menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#top-nav-services-menu li {
+    margin-right: 10px ;
+}
+#top-nav-services-menu,#top-nav-menu-items,#top-nav-brand{
+    order: 1;
+}
+/******* end navbar*******/
+
+
+/******* start header parallax *******/
+#header-slider  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header-slider-desc {
+    width: 65%  ;
+    flex-grow: 1;
+    margin: 35px 0px;
+    text-align: center;
+}
+#header-slider-desc>h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+#header-slider-desc>p {
+    font-size: 20px;
+    line-height: 2;
+}
+#slider-image-container {
+    z-index: 9999;
+}
+#slider-image-container img {
+    transform: skewY(10deg);
+    transition: transform 500ms ease-in;
+    animation-name: fadeIn;
+    animation-duration: 1s ;
+    animation-delay: 500ms ;
+    animation-timing-function: linear;
+}
+#header-slider:hover #slider-image-container img {
+    transform: skewY(13deg);
+}
+/******* end header parallax *******/
+
+/******* product-introduction-1 start *******/
+#product-introduction1{
+    background-image: url("../../../img/promo_ipadpro_refresh__evi9utuixwuq_large.jpg");
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+#product-introduction1>h3 {
+    margin: unset;
+    font-size: 50px;
+}
+
+#product-introduction1>h4 {
+    margin: 15px 0;
+    font-size: x-large;
+    letter-spacing: 3px;
+}
+#product-introduction1>h5 {
+    font-size: large;
+    margin: 10px 0;
+}
+#product-introduction1>.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+#product-introduction1>.link-container>h6 {
+    margin: unset;
+    font-size: medium;
+}
+#product-introduction1>.link-container>h6:first-child {
+    margin-right: 0px;
+}
+
+/******* product-introduction-1 end *******/
+
+/******* appleTv-introduction start *******/
+#apple-tv-introduction {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#apple-tv-introduction>:first-child {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#apple-tv-introduction>:first-child>i {
+    font-size: 125px;
+    margin-right: 20px;
+}
+#apple-tv-introduction>:first-child>h2 {
+    text-transform: capitalize;
+    align-self: center;
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin: unset ;
+    transform: translateY(6px);
+}
+#apple-tv-introduction>:nth-child(2){
+    width: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#apple-tv-introduction>:nth-child(2) h3 {
+    width: fit-content;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin: unset;
+}
+#apple-tv-introduction>:nth-child(2) img {
+    height: 320px;
+    position: absolute;
+    top: 15px;
+    left: 76%;
+}
+#apple-tv-introduction>:nth-child(3) {
+    margin: 25px 0 ;
+    width: fit-content;
+}
+#apple-tv-introduction>:nth-child(3) h4 {
+    font-size: 30px;
+    margin: unset;
+    text-transform: capitalize;
+    width: fit-content;
+}
+#apple-tv-introduction>.link-container:nth-child(3){
+    transform: translateX(10px);
+}
+#apple-tv-introduction>:nth-child(4) img {
+    width: 100%;
+}
+/******* appleTv-introduction end *******/
+
+
+/******* two column introduction start *******/
+#two-column-introduction {
+    display: flex;
+    flex-wrap: wrap;
+}
+#two-column-introduction section.column{
+    width: 50%;
+    min-height: 580px;
+}
+#two-column-introduction section.column {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+#two-column-introduction section.column>* {
+    background: var(--gradient-2);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    padding: 0;
+    margin:0 0 12px 0;
+    text-transform: capitalize;
+}
+#two-column-introduction section.column>:first-child {
+    margin-top: 20px;
+}
+#two-column-introduction section.column>:last-child {
+    margin-bottom: unset;
+}
+#two-column-introduction section.column h2 {
+    font-size: 50px;
+}
+#two-column-introduction section.column h3 {
+    font-size: 30px;
+}
+#two-column-introduction section.column h4 {
+    font-size: 25px;
+}
+#two-column-introduction section.column h5 {
+    font-size: 22px;
+}
+#two-column-introduction section.column .segregated-link-container {
+    width: 65%;
+}
+#two-column-introduction section.column .link-container a ,
+#two-column-introduction section.column .segregated-link-container a {
+    font-size: 18px;
+}
+#two-column-introduction section.column:nth-child(1) {
+    background-image: url("../../../img/promo_apple_watch_series_8_spring__d9hfvufh7hyu_large.jpg");
+}
+#two-column-introduction section.column:nth-child(1) .segregated-link-container h6 {
+    margin:0 0 12px 0;
+}
+#two-column-introduction section.column:nth-child(2) {
+    background-image: url("../../../img/promo_iphone14pro_spring__c7pyovk04j2a_large.jpg");
+}
+#two-column-introduction section.column:nth-child(2) h3 {
+    font-size: 25px;
+}
+#two-column-introduction section.column:nth-child(2) h4 {
+    font-size: 21px;
+}
+#two-column-introduction section.column:nth-child(3) {
+    background-image: url("../../../img/promo_ipadpro_refresh__evi9utuixwuq_large.jpg");
+    padding-top: 35px;
+    
+}
+#two-column-introduction section.column:nth-child(3) h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+#two-column-introduction section.column:nth-child(3) .buy-button {
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+}
+.buy-button .button-text-container {
+    margin-left: 10px ;
+}
+.buy-button::after {
+    width: 47px !important;
+}
+
+#two-column-introduction section.column:nth-child(3) .buy-button > a {
+    color : white ; 
+    
+}
+#two-column-introduction section.column:nth-child(3) .buy-button .button-icon-container i {
+    font-size: 18px;
+}
+#two-column-introduction section.column:nth-child(3) .buy-button .button-text-container {
+    font-weight: bolder;
+}
+#two-column-introduction section.column:nth-child(3) .buy-button .dots {
+    letter-spacing: 4px;
+    margin-left: 4px;
+}
+
+#two-column-introduction section.column:nth-child(4) {
+    background-image: url("../../../img/mac-mini.jpg");
+    justify-content: flex-end;
+    padding-top: unset ; 
+    padding-bottom: 20px ;
+}
+#two-column-introduction section.column:nth-child(4)>h2 {
+    margin-bottom: unset ;
+}
+#two-column-introduction section.column:nth-child(4) .link-container h3 {
+    margin: 8px 0 5px 0;
+}
+#two-column-introduction section.column:nth-child(4) .link-container h3 a {
+    font-size: 22px;
+    
+}
+/******* two column introduction end *******/
+/******* footer start *******/
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+    footer .container {
+        width: 80%;
+    }
+    footer .container {
+        color: #eff5f7;
+    }
+    footer .container .sentence-container::after {
+        width: 60%;
+        margin-block: 30px;
+    }
+    footer .container .sentence-container .sentence{
+        text-align: justify;
+        margin-bottom: 15px;
+        line-height: 1.8;
+    }
+    footer .container .sentence-container .sentence:last-child {
+        margin-bottom: unset;
+    }
+    footer .container .footer-link-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .container .footer-link-container li>h6 {
+        font-size: 16px;
+        font-weight: bolder;
+        margin: 15px 0;
+        text-transform: capitalize;
+    }
+    footer .container .footer-link-container li>ul>li {
+        margin-bottom: 15px;
+    }
+    footer .container .footer-link-container li>ul>li:last-child {
+        margin-bottom: unset;
+    }
+    footer .container .footer-link-container li>ul>li>a {
+        color: inherit;
+    }
+    footer .container .footer-link-container + p {
+        color : inherit ;
+        margin-block-start: 50px ;
+        margin-bottom: 15px;
+        line-height: 2;
+        text-align: justify;
+    }
+    footer .container .footer-link-container + p::after {
+        margin-top: 10px;
+        background:var(--gradient-2);
+    }
+    footer #end-of-story {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    footer #end-of-story p.copy-right {
+        margin: unset;
+    }
+    footer #end-of-story ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+    footer #end-of-story ul>li {
+        margin-right: 12px ;
+    }
+    footer #end-of-story ul>li:last-child {
+        margin-right: unset;
+    }
+    footer #end-of-story #language {
+        align-self: center;
+    }
+    footer .container .footer-link-container + p a ,
+    footer #end-of-story a {
+        background: var(--gradient-2);
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        position: relative;
+    }
+    footer .container .footer-link-container + p a::after , 
+    footer #end-of-story a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: var(--gradient-2);
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 500ms linear;
+    }
+    footer .container .footer-link-container + p a:hover::after , 
+    footer #end-of-story a:hover::after  {
+        width: 100%;
+    }
+    /******* footer end *******/

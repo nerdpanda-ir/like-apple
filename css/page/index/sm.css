@@ -1,0 +1,127 @@
+@media only screen and (min-width: 576px ) and (max-width: 767px){
+    /******* navbar*******/
+    #top-nav {
+        height: auto !important;
+        flex-direction: column;
+    }
+    #top-nav>#top-nav-brand {
+        margin-right: unset !important;
+        margin-left: unset !important;
+    }
+    #top-nav>#top-nav-brand a {
+        padding: 10px 0;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    #top-nav>ul#top-nav-menu-items>li>a {
+        padding: 13px 20px !important;
+    }
+    #top-nav>ul#top-nav-menu-items>li {
+        margin-right: 15px !important;
+    }
+    #top-nav>ul#top-nav-menu-items>li>a>i {
+        font-size: 30px !important;
+    }
+    #top-nav>#top-nav-services-menu{
+        position: absolute;
+        right: 0;
+        height: 75px;
+    }
+    #top-nav>#top-nav-services-menu li a {
+        box-sizing: border-box;
+        padding: 8px 0;
+    }
+    /******* end navbar *******/
+    /******* start header parallax *******/
+    #header-slider-desc {
+        margin: 25px 0px !important ;
+    }
+    #header-slider-desc>h2 {
+        font-size: 25px !important;
+        margin: 5px 0 ;
+    }
+    #header-slider-desc>p {
+        font-size: 13px !important;
+        line-height: 1.5 !important ;
+    }
+    #slider-image-container {
+        text-align: center;
+    }
+    #slider-image-container img {
+        width: 80%;
+    }
+    /******* end header parallax *******/
+    /******* two column introduction start *******/
+    #two-column-introduction {
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+
+    }
+    #two-column-introduction section.column {
+        width: 100% !important;
+    }
+
+    /* #two-column-introduction section.column h2 {
+        font-size: 40px !important;
+    }
+    #two-column-introduction section.column h3 {
+        font-size: 25px !important;
+    }
+    #two-column-introduction section.column h4 {
+        font-size: 20px !important;
+    }
+    #two-column-introduction section.column h5 {
+        font-size: 18px !important;
+    }
+    #two-column-introduction section.column .link-container a ,
+    #two-column-introduction section.column .segregated-link-container a {
+        font-size: 16px !important;
+    }
+    #two-column-introduction section.column>* {
+        margin-bottom: 18px !important;
+    }
+    #two-column-introduction section.column:nth-child(3) h2 {
+        font-size: 30px !important;
+        margin-bottom: 25px !important;
+     } */
+    /******* two column introduction end *******/
+    /******* FOOTER START *******/
+        footer .container {
+            width:100% !important;
+            padding-inline: 15px ;
+            box-sizing: border-box;
+        }
+        footer .container .sentence-container .sentence {
+            font-size: 14px;
+        }
+        footer .container {
+            width:95% !important;
+            padding-inline: 15px ;
+        }
+        footer .footer-link-container {
+            flex-wrap: wrap;
+            justify-content:unset !important;
+        }
+        footer .footer-link-container>li {
+            text-align: center;
+            margin-inline: auto;
+            margin-bottom: 25px ;
+        }
+        footer .container .footer-link-container + p {
+            text-align: center !important;
+        }
+        #end-of-story {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: unset !important;
+
+        }
+        #end-of-story .copy-right {
+            margin-right: 5% !important;
+        }
+        #end-of-story ul {
+            margin: 15px 0;
+            order: 1;
+        }
+    /******* FOOTER end *******/
+}

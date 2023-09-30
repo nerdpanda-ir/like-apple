@@ -1,0 +1,36 @@
+@import url("button/variable.css");
+.button {
+    padding: 10px !important;
+    position: relative;
+}
+.icon-button {
+    padding-left: 15px !important;
+    padding-right: 18px !important;
+}
+.icon-button > .button-icon-container {
+    margin-right : 10px;
+}
+.gradient-button-1 {
+    background-image : var(--gradient-button1-color) !important;
+}
+.effective-button {
+    z-index: 2;
+    overflow: hidden;
+}
+.effective-button::after {
+    background-color: rgba(254, 254, 254,0.1);
+    opacity: 0.8;
+    content: "";
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform-origin 600ms linear;
+    z-index: -1;
+    transform: scaleX(10);
+    transform-origin: right;
+}
+.effective-button:hover::after {
+    transform-origin: left ;
+}

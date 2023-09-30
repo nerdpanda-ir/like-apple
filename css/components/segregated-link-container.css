@@ -1,0 +1,32 @@
+.segregated-link-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.segregated-link-container a {
+    background: var(--gradient-2);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    position: relative;
+}
+.segregated-link-container a:before {
+    content: "";
+    background: var(--gradient-2);
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 500ms linear;
+}
+.segregated-link-container a:hover:before {
+    width: 100%;
+}
+.segregated-link-container a:after {
+    content: "\f054";
+    font-family: "Font Awesome 6 Pro";
+    margin: 0 5px;
+    background: var(--gradient-2);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}

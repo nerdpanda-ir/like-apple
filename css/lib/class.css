@@ -1,0 +1,42 @@
+@import url("font-classes/font-classes.css");
+@import url("Classes/animations.css");
+.flex {
+    display: flex ;
+}
+.justify-center {
+    justify-content: center;
+}
+.parallax {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bg100 {
+    background-size: 100% 100%;
+}
+.bg-no-repeat{
+    background-repeat: no-repeat;
+}
+.text-gradient {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.text-gradient-1 {
+    background: var(--gradient-1);
+}
+.text-gradient-2 {
+    background: var(--gradient-2);
+}
+
+.animation-text-decoration-gradient2::after{
+    background: var(--gradient-2);
+}
+.gradient-border-bottom::after {
+    content: "";
+    display: block;
+    height: 2px;
+    margin-inline: auto;
+    border-radius: 3px;
+}
+.rounded-3px {
+    border-radius: 3px;
+}

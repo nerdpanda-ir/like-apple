@@ -1,0 +1,158 @@
+@media only screen and (min-width: 473px) and (max-width: 575px) {
+    /******* navbar*******/
+
+    #top-nav {
+        height: auto !important;
+        flex-direction: column;
+    }
+    #top-nav>#top-nav-brand {
+        margin-right: unset !important;
+        margin-left: unset !important;
+        padding: 10px 0;
+    }
+    #top-nav-brand i {
+        font-size: 40px !important;
+    }
+    #top-nav-brand h1 {
+        font-size: 27px;
+        transform: translateY(3px);
+    }
+
+    #top-nav>#top-nav-brand a {
+        margin: 0 auto;
+        width: fit-content;
+    }
+    #top-nav>ul#top-nav-menu-items>li {
+        margin-right: 15px !important;
+    }
+    #top-nav>ul#top-nav-menu-items>li>a {
+        padding: 13px 15px !important;
+    }
+    #top-nav>ul#top-nav-menu-items>li>a>i {
+        font-size: 25px !important;
+    }
+    #top-nav>#top-nav-services-menu{
+        position: absolute;
+        right: 0;
+        height: 60px;
+    }
+    #top-nav>#top-nav-services-menu li a {
+        box-sizing: border-box;
+        padding: 5px 0;
+    }
+    #top-nav>#top-nav-services-menu li a img {
+        width: 50px;
+        height: 50px;
+    }
+    /******* end navbar *******/
+    /******* start header parallax *******/
+    #header-slider-desc {
+        margin: 25px 0px !important ;
+    }
+    #header-slider-desc>h2 {
+        font-size: 25px !important;
+        margin: 5px 0 ;
+        line-height: 1.5;
+    }
+    #header-slider-desc>p {
+        font-size: 13px !important;
+        line-height: 1.5 !important ;
+    }
+    #slider-image-container {
+        text-align: center;
+    }
+    #slider-image-container img {
+        width: 80%;
+    }
+    /******* end header parallax *******/
+
+    /******* appleTv-introduction start *******/
+    #apple-tv-introduction>:nth-child(2) img {
+        width: 160px;
+    }
+    /******* appleTv-introduction end *******/
+    /******* two column introduction start *******/
+    #two-column-introduction {
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+
+    }
+    #two-column-introduction section.column {
+        width: 100% !important;
+    }
+    #two-column-introduction section.column:nth-child(2) h3 {
+        font-size: 20px !important;
+    }
+    #two-column-introduction section.column:nth-child(2) h4 {
+        font-size: 18px !important;
+    }
+    #two-column-introduction section.column:nth-child(3) h2 {
+        font-size: 45px !important;
+     }
+    /* #two-column-introduction section.column h2 {
+        font-size: 40px !important;
+    }
+    #two-column-introduction section.column h3 {
+        font-size: 25px !important;
+    }
+    #two-column-introduction section.column h4 {
+        font-size: 20px !important;
+    }
+    #two-column-introduction section.column h5 {
+        font-size: 18px !important;
+    }
+    #two-column-introduction section.column .link-container a ,
+    #two-column-introduction section.column .segregated-link-container a {
+        font-size: 16px !important;
+    }
+    #two-column-introduction section.column>* {
+        margin-bottom: 18px !important;
+    }
+    #two-column-introduction section.column:nth-child(3) h2 {
+        font-size: 30px !important;
+        margin-bottom: 25px !important;
+     } */
+    /******* two column introduction end *******/
+   /******* FOOTER START *******/
+    footer .container {
+        width:100% !important;
+        padding-inline: 15px ;
+        box-sizing: border-box;
+    }
+    footer .container .sentence-container .sentence {
+        font-size: 14px;
+    }
+    footer .container {
+        width:98% !important;
+    }
+    footer .footer-link-container {
+        flex-wrap: wrap;
+        justify-content:unset !important;
+    }
+    footer .footer-link-container>li {
+        width: 45%;
+        margin-inline: auto;
+        margin-bottom: 25px ;
+        text-align: center;
+    }
+    footer .container .footer-link-container + p {
+        text-align: center !important;
+    }
+    #end-of-story {
+        flex-direction: column;
+        margin-bottom: unset !important;
+
+    }
+    #end-of-story>*{
+        margin-bottom: 15px !important ;
+    }
+    #end-of-story .copy-right {
+        text-align: center ;
+    }
+    #end-of-story ul {
+        flex-wrap: wrap;
+        order: 1;
+        line-height: 2;
+    }
+/******* FOOTER end *******/
+}

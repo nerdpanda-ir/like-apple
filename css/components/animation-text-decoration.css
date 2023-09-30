@@ -1,0 +1,16 @@
+.animation-text-decoration {
+    position: relative;
+}
+.animation-text-decoration::after {
+    content: "";
+    height: 2px;
+    display:block;
+    width: 0% ;
+    position: absolute;
+    left: -1px;
+    bottom: -5px;
+    transition: width 300ms linear;
+}
+.animation-text-decoration:hover::after {
+    width: 100%;
+}

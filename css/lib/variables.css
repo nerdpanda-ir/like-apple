@@ -1,0 +1,6 @@
+:root {
+    --gradient-1: linear-gradient(0deg, rgba(195,35,255,1) 0%, rgba(31,106,255,1) 100%);
+    --gradient-2: linear-gradient(to right, #E100FF, #7F00FF) ;
+    --gradient-3 : linear-gradient(to right, #3f51b5, #7F00FF); 
+
+}
